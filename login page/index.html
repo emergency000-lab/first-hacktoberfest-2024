@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Login Page</title>
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=C92yi4L31OGx&format=png&color=000000" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=C92yi4L31OGx&format=png&color=000000"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body>
     <div class="main">
-        <input type="checkbox" id="chk" aria-hidden="true">
-        <div class="signup">
-            <form>
-                <label for="chk" aria-hidden="true">Sign Up</label>
-                <input type="text" name="txt" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="pwd" placeholder="Password" required>
-                <button>Sign up</button>
-            </form>
-        </div>
-        <div class="login">
-            <form>
-                <label for="chk" aria-hidden="true">Login</label>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="pwd" placeholder="Password" required>
-                <button>Login</button>
-            </form>
-        </div>
+      <input type="checkbox" id="chk" aria-hidden="true" />
+      <div class="signup">
+        <form>
+          <label for="chk" aria-hidden="true" id="sign-logo">Sign Up</label>
+          <input
+            type="text"
+            name="txt"
+            class="sign-input"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="sign-input"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            name="pwd"
+            class="sign-input"
+            placeholder="Password"
+            required
+          />
+          <button id="signup-btn" type="submit">Sign up</button>
+        </form>
+      </div>
+      <div class="login">
+        <form>
+          <label for="chk" aria-hidden="true" id="login-logo">Login</label>
+          <input
+            class="login-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="login-input"
+            type="password"
+            name="pwd"
+            placeholder="Password"
+            required
+          />
+          <button class="login-input" id="login-btn" type="submit">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
